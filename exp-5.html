@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Background Color</title>
+</head>
+<body>
+<script type="text/javascript">
+var d = new Date();
+var h = d.getHours();
+if(h < 12)
+{
+    document.bgColor = "yellow";
+}
+else if(h < 18)
+{
+    document.bgColor = "green";
+}
+else
+{
+    document.bgColor = "blue";
+}
+document.write("Current Hour : " + h);
+</script>
+</body>
+</html>
