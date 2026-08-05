@@ -1,1 +1,197 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-Commerce Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">ShopEasy</a>
+
+        <div class="nav-group">
+            <div class="search-box">
+                <input type="text" placeholder="Search products...">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-actions">
+            <a href="#" class="cart-pill">Cart <span>3</span></a>
+            <a href="#" class="login-btn">Login</a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger" aria-label="Open menu">&#9776;</label>
+
+        <ul class="mobile-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.navbar {
+    background: #1d3557;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 24px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex: 1;
+}
+
+.search-box input {
+    width: 240px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 999px;
+    outline: none;
+}
+
+.nav-links,
+.mobile-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a,
+.mobile-links a,
+.nav-actions a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.mobile-links a:hover,
+.login-btn:hover,
+.cart-pill:hover {
+    color: #ffd166;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-pill,
+.login-btn {
+    background: rgba(255,255,255,0.12);
+    padding: 8px 12px;
+    border-radius: 999px;
+}
+
+.cart-pill span {
+    background: #ffd166;
+    color: #1d3557;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: 4px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.9rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.mobile-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #274c77;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.mobile-links li {
+    padding: 8px 0;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        align-items: center;
+    }
+
+    .nav-group {
+        width: 100%;
+        order: 3;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        flex: 1 1 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-links,
+    .nav-actions {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #menu-toggle:checked + .hamburger + .mobile-links {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 14px 18px;
+    }
+}
