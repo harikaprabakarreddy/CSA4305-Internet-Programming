@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First Blog</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+        }
+
+        header, nav, footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:10px;
+            display:block;
+        }
+
+        .container{
+            display:flex;
+            flex-direction:column;
+            padding:15px;
+        }
+
+        .content,
+        .sidebar{
+            background:#f4f4f4;
+            padding:20px;
+            margin-bottom:10px;
+            border-radius:8px;
+        }
+
+        @media (min-width:768px){
+
+            nav a{
+                display:inline-block;
+            }
+
+            .container{
+                flex-direction:row;
+                gap:20px;
+            }
+
+            .content{
+                flex:3;
+            }
+
+            .sidebar{
+                flex:1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main class="container">
+
+        <article class="content">
+            <h2>Blog Title</h2>
+            <p>This is the main blog content.</p>
+        </article>
+
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Latest posts, categories, or advertisements can appear here.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        &copy; 2026 My Blog
+    </footer>
+
+</body>
+</html>
