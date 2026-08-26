@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+// Model
+class Model {
+    public String getData(String name) {
+        return "Hello, " + name;
+    }
+}
+
+// View
+class View {
+    public void display(String data) {
+        System.out.println("View Output:");
+        System.out.println(data);
+    }
+}
+
+// Controller
+class Controller {
+    private Model model;
+    private View view;
+
+    Controller(Model model, View view) {
+        this.model = model;
+        this.view = view;
+    }
+
+    public void processRequest(String name) {
+        if (name == null || name.isEmpty()) {
+            view.display("Invalid input");
+        } else {
+            String data = model.getData(name);
+            view.display(data);
+        }
+    }
+}
+
+// Main
+public class MVCExample {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        Model model = new Model();
+        View view = new View();
+        Controller controller = new Controller(model, view);
+
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        controller.processRequest(name);
+
+        sc.close();
+    }
+}
