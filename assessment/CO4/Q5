@@ -1,0 +1,87 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $name = trim($_POST["name"]);
+    $email = trim($_POST["email"]);
+    $password = $_POST["password"];
+
+    $valid = true;
+
+    // Validate Name
+    if (empty($name)) {
+
+        echo "Name cannot be empty.<br>";
+        $valid = false;
+    }
+
+    // Validate Email
+    if (empty($email)) {
+
+        echo "Email cannot be empty.<br>";
+        $valid = false;
+
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+        echo "Enter a valid email address.<br>";
+        $valid = false;
+    }
+
+    // Validate Password
+    if (empty($password)) {
+
+        echo "Password cannot be empty.<br>";
+        $valid = false;
+
+    } elseif (strlen($password) < 8) {
+
+        echo "Password must contain at least 8 characters.<br>";
+        $valid = false;
+    }
+
+    // Check Validation
+    if ($valid) {
+
+        $name = htmlspecialchars($name);
+        $email = htmlspecialchars($email);
+
+        echo "<h3>Form Submitted Successfully</h3>";
+        echo "Name: " . $name . "<br>";
+        echo "Email: " . $email;
+
+    } else {
+
+        echo "<h3>Please correct the errors and try again.</h3>";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Validation</title>
+</head>
+<body>
+
+<h2>User Registration Form</h2>
+
+<form method="POST">
+
+    Name:
+    <input type="text" name="name">
+    <br><br>
+
+    Email:
+    <input type="email" name="email">
+    <br><br>
+
+    Password:
+    <input type="password" name="password">
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
