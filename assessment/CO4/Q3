@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSP Request Flow</title>
+</head>
+<body>
+
+<h2>JSP Request Flow</h2>
+
+<form method="post">
+
+    Enter Name:
+    <input type="text" name="name">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+<%
+    String name = request.getParameter("name");
+
+    if (name != null && !name.isEmpty()) {
+%>
+
+    <h3>Welcome, <%= name %></h3>
+
+<%
+    }
+%>
+
+</body>
+</html>
