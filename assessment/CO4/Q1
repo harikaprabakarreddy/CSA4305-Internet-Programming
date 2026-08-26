@@ -1,0 +1,23 @@
+import xml.etree.ElementTree as ET
+
+try:
+    tree = ET.parse("users.xml")
+    root = tree.getroot()
+
+    print("Root Element:", root.tag)
+
+    for child in root:
+        print("\nRecord Details")
+
+        for element in child:
+            if len(element) > 0:
+                print(element.tag + ":")
+                for sub_element in element:
+                    print("  " + sub_element.tag + ": " + sub_element.text)
+            else:
+                print(element.tag + ":", element.text)
+
+        print("----------------------")
+
+except FileNotFoundError:
+    print("Error: Unable to load XML file")
