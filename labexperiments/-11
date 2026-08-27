@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home Finder</title>
+<style>
+body{font-family:Arial;margin:0;background:#eef3f6}header{background:#2e7d32;color:#fff;padding:16px;text-align:center}
+nav{background:#1b5e20;padding:8px;text-align:center}button{margin:4px;padding:8px}
+.card{background:#fff;margin:20px;padding:16px;border-radius:8px;box-shadow:0 2px 6px #bbb}
+table{width:100%;border-collapse:collapse}th,td{border:1px solid #ccc;padding:8px}th{background:#2e7d32;color:#fff}
+</style></head><body>
+<header><h1>🏡 Home Finder - Real Estate Platform</h1></header>
+<nav><button>Home</button><button>Login</button><button>Register</button><button>Properties</button><button>Favorites</button><button>Agents</button><button>Contact</button><button>Admin</button></nav>
+<div class="card">
+<h2>Main Features</h2>
+<ul>
+<li>User Registration & Login</li>
+<li>Save Search Criteria</li>
+<li>Advanced Search (Location, Budget, Type, Amenities)</li>
+<li>Residential & Commercial Listings</li>
+<li>Property Images & Virtual Tour (Demo)</li>
+<li>Interactive Google Maps (Demo Link)</li>
+<li>Schedule Property Viewing</li>
+<li>Favorite Properties</li>
+<li>Property Notifications (Demo)</li>
+<li>Property Valuation (Demo)</li>
+<li>Mortgage Calculator (Demo)</li>
+<li>Contact Real Estate Agents</li>
+<li>Agent & Company Search</li>
+<li>Advertisements / External Links</li>
+<li>Customer Visit Records (Demo)</li>
+<li>Admin Manage Properties</li>
+</ul>
+
+<h2>Property Listings</h2>
+<table>
+<tr><th>Property</th><th>Location</th><th>Type</th><th>Price</th><th>Amenities</th><th>Map</th></tr>
+<tr><td>Luxury Villa</td><td>Hyderabad</td><td>House</td><td>₹1.25 Cr</td><td>Pool, Garden</td><td><a href="https://maps.google.com" target="_blank">View</a></td></tr>
+<tr><td>2BHK Apartment</td><td>Chennai</td><td>Apartment</td><td>₹65 Lakh</td><td>Parking, Lift</td><td><a href="https://maps.google.com" target="_blank">View</a></td></tr>
+<tr><td>Commercial Plot</td><td>Bangalore</td><td>Land</td><td>₹90 Lakh</td><td>Main Road</td><td><a href="https://maps.google.com" target="_blank">View</a></td></tr>
+</table>
+
+<h2>Supported Use Cases</h2>
+<ol>
+<li>Login / Register</li>
+<li>Search Properties</li>
+<li>Save Search Criteria</li>
+<li>View Property Details</li>
+<li>View Google Map</li>
+<li>Book Property Visit</li>
+<li>Save Favorites</li>
+<li>Search Agents & Companies</li>
+<li>Contact Agent</li>
+<li>Mortgage & Valuation Tools (Demo)</li>
+<li>Admin Add / Edit / Delete Properties</li>
+<li>Track Customer Visits (Demo)</li>
+</ol>
+
+<p><b>Note:</b> This is a single HTML demo without a database. Data is not stored after refresh.</p>
+</div>
+</body></html>
