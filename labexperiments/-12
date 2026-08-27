@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InsureEasy Insurance Management</title>
+<style>
+body{margin:0;font-family:Arial;background:#eef4f8}
+header{background:#1565c0;color:#fff;padding:16px;text-align:center}
+nav{background:#0d47a1;padding:8px;text-align:center}
+button{margin:4px;padding:8px 12px}
+.card{background:#fff;margin:20px;padding:16px;border-radius:8px;box-shadow:0 2px 6px #bbb}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #ccc;padding:8px}
+th{background:#1565c0;color:#fff}
+</style>
+</head>
+<body>
+<header><h1>🛡️ InsureEasy Insurance Management System</h1></header>
+<nav>
+<button>Home</button><button>User</button><button>Agent</button><button>Admin</button>
+</nav>
+
+<div class="card">
+<h2>Platform Features</h2>
+<ul>
+<li>User Registration & Login</li>
+<li>Compare Health, Auto & Home Insurance</li>
+<li>Policy Details & Premium Information</li>
+<li>Purchase Policy (Demo)</li>
+<li>Premium Payment (Demo)</li>
+<li>Claim Request (Demo)</li>
+<li>Policy Renewal Reminder (Demo)</li>
+<li>SMS Alert (Demo)</li>
+<li>Personalized Policy Recommendations (Demo)</li>
+<li>Dashboard for Existing Policies</li>
+</ul>
+
+<h2>Admin Features</h2>
+<ul>
+<li>Login</li>
+<li>Approve Agent Login</li>
+<li>View All Agent Details</li>
+<li>View Customer Information</li>
+</ul>
+
+<h2>Agent Features</h2>
+<ul>
+<li>Register & Login</li>
+<li>Create Customer</li>
+<li>Manage Customer Details</li>
+<li>Manage Policy Details</li>
+<li>Send SMS Alerts</li>
+</ul>
+
+<h2>User Features</h2>
+<ul>
+<li>Login</li>
+<li>Manage Policy Details</li>
+<li>Receive SMS Alerts</li>
+<li>View Premium Due Dates</li>
+</ul>
+
+<h2>Sample Policies</h2>
+<table>
+<tr><th>Policy</th><th>Type</th><th>Premium</th><th>Status</th></tr>
+<tr><td>Health Secure</td><td>Health</td><td>₹12,000/year</td><td>Available</td></tr>
+<tr><td>Auto Protect</td><td>Vehicle</td><td>₹8,500/year</td><td>Available</td></tr>
+<tr><td>Home Shield</td><td>Home</td><td>₹15,000/year</td><td>Available</td></tr>
+</table>
+
+<p><b>Note:</b> This is a standalone single HTML demonstration. Payments, SMS, policy approval and claims are simulated. No database is used, so data resets after page refresh.</p>
+</div>
+</body>
+</html>
