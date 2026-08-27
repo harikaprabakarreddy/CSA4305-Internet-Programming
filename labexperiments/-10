@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>StyleHub Fashion Store</title><style>
+body{font-family:Arial;margin:0;background:#faf7fb}header{background:#7b1fa2;color:#fff;padding:15px;text-align:center}nav{background:#4a148c;padding:8px;text-align:center}button{margin:4px;padding:8px}.card{background:#fff;margin:20px;padding:15px;border-radius:8px;box-shadow:0 2px 6px #bbb}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ccc;padding:8px}th{background:#7b1fa2;color:#fff}</style></head><body>
+<header><h1>👗 StyleHub Fashion Store</h1></header>
+<nav><button>Home</button><button>Login</button><button>Register</button><button>Categories</button><button>Cart</button><button>Wishlist</button><button>Orders</button><button>Admin</button></nav>
+<div class='card'>
+<h2>Features</h2>
+<ul>
+<li>User Registration & Login</li><li>Advanced Search & Filters</li><li>Categories & Subcategories</li><li>Product Details with Images (demo)</li><li>Customer Reviews</li><li>Size Guide</li><li>Wishlist</li><li>Add/Edit/Remove Cart</li><li>Secure Payment (demo)</li><li>Order Tracking</li><li>Return & Exchange Policy</li><li>Order History</li><li>Personalized Recommendations</li><li>Flash Sales & Discounts</li><li>Admin Add/Delete Products</li><li>Update Price & Description</li><li>View Customer Checkout Information</li></ul>
+
+<h2>Categories</h2>
+<table>
+<tr><th>Category</th><th>Subcategory</th><th>Item</th><th>Price</th><th>Status</th></tr>
+<tr><td>Men</td><td>Casual Wear</td><td>T-Shirt</td><td>₹799</td><td>In Stock</td></tr>
+<tr><td>Women</td><td>Formal Wear</td><td>Blazer</td><td>₹2499</td><td>In Stock</td></tr>
+<tr><td>Children</td><td>Seasonal</td><td>Jacket</td><td>₹1299</td><td>Limited</td></tr>
+<tr><td>Accessories</td><td>Footwear</td><td>Sneakers</td><td>₹1999</td><td>In Stock</td></tr>
+</table>
+
+<h2>Supported Use Cases</h2>
+<ol>
+<li>Visit Site</li><li>Login</li><li>Search Items</li><li>Check Availability</li><li>Add to Cart</li><li>Edit Cart</li><li>Remove Cart Items</li><li>Checkout</li><li>Order Status</li><li>Order History</li><li>Display Item Details</li><li>Logout</li><li>Leave Site</li>
+</ol>
+<p><b>Note:</b> This is a single HTML demo without a database. Data resets on refresh.</p>
+</div></body></html>
